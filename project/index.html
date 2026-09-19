@@ -1,19 +1,153 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Учебный проект по техническому заданию"
-    />
-    <title>Учебный проект</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Учебный проект</h1>
-      <p>Стартовая версия страницы.</p>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+          name="description"
+          content="История о плавании как любимом хобби: здоровье, прогресс и ментальная перезагрузка"
+  />
+  <title>О плавании — любимое хобби</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header class="site-header container">
+  <a class="site-header__brand" href="#top">О плавании</a>
+
+  <nav class="site-header__nav" aria-label="Навигация по истории">
+    <a href="#story">История</a>
+    <a href="#facts">Факты</a>
+    <a href="#next">Попробовать</a>
+  </nav>
+</header>
+
+<main id="top" class="container page">
+  <section class="hero card" aria-labelledby="hero-title">
+    <div class="hero__copy">
+      <p class="eyebrow">Любимое хобби</p>
+
+      <h1 id="hero-title">
+        Плавание - любимое хобби
+      </h1>
+
+      <p class="hero__lead">
+        Плавание может быть не только полезным для здоровья, но и приятным
+        занятием, которое помогает поддерживать здоровый образ жизни.
+      </p>
+
+      <a class="button" href="#story">Прочитать подробнее</a>
+    </div>
+
+    <div class="hero__badge" aria-label="Главный факт">
+      <span>Главный факт</span>
+
+      <strong>
+        Плавание помогает поддерживать физическую форму и заботиться о здоровье
+      </strong>
+    </div>
+  </section>
+
+  <section id="story" class="story" aria-labelledby="story-title">
+    <div class="story__heading">
+      <p class="eyebrow">История</p>
+
+      <h2 id="story-title">
+        Как плавание стало любимым хобби
+      </h2>
+    </div>
+
+    <div class="story__body card">
+      <p class="story__lead">
+        Все началось с пробного похода в бассейн без особого интереса к плаванию.
+      </p>
+
+      <p>
+        Постепенно я увлеклась плаванием и оно стало важной частью моей жизни.
+        Так благодаря желанию попробовать что-то новое, плавание превратилось в любимое хобби.
+      </p>
+
+      <p>
+        Плавание стало привычной частью жизни, которая помогает переключаться, получать удовольствие и чувствовать себя лучше.
+      </p>
+    </div>
+  </section>
+
+  <section id="facts" class="facts" aria-labelledby="facts-title">
+    <header class="facts__heading">
+      <p class="eyebrow">В трёх фактах</p>
+
+      <h2 id="facts-title">
+        Что даёт плавание
+      </h2>
+    </header>
+
+    <div class="facts__grid">
+      <article class="fact-card">
+        <strong class="fact-card__number">01</strong>
+
+        <h3 class="fact-card__title">
+          Полезно для здоровья
+        </h3>
+
+        <p class="fact-card__text">
+          Плавание помогает поддерживать физическую форму и заботиться о
+          здоровье.
+        </p>
+      </article>
+
+      <article class="fact-card">
+        <strong class="fact-card__number">02</strong>
+
+        <h3 class="fact-card__title">
+          Прогресс делает тренировки интереснее
+        </h3>
+
+        <p class="fact-card__text">
+          В плавании можно ставить новые цели и замечать собственные
+          достижения.
+        </p>
+      </article>
+
+      <article class="fact-card">
+        <strong class="fact-card__number">03</strong>
+
+        <h3 class="fact-card__title">
+          Ментальная перезагрузка
+        </h3>
+
+        <p class="fact-card__text">
+          Тренировка помогает расслабиться, улучшить сон и переключиться после рабочего дня.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="next" class="next-step" aria-labelledby="next-title">
+    <div>
+      <p class="eyebrow">Следующий шаг</p>
+
+      <h2 id="next-title">
+        Хотите попробовать плавание?
+      </h2>
+    </div>
+
+    <a
+            class="button button--secondary"
+            href="https://www.swimrocket.ru/plavanie-dlya-vzroslyh/"
+            target="_blank"
+            rel="noopener noreferrer"
+    >
+      Школа плавания для взрослых в Москве
+    </a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p>История подготовлена по интервью</p>
+    <p>Александр Чухарев · 2026</p>
+  </div>
+</footer>
+</body>
 </html>
